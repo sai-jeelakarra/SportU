@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linear_background"
+    tools:context=".activities.TeamRankingsActivity">
+
+    <LinearLayout
+        android:id="@+id/verticalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_blur"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:text="TEST" />
+
+            <Button
+                android:textColor="#EAE8E8"
+                android:background="@drawable/button_blur"
+                android:id="@+id/odi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="ODI" />
+
+            <Button
+                android:textColor="#EAE8E8"
+                android:background="@drawable/button_blur"
+                android:id="@+id/t20"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:text="T20" />
+            <Button
+                android:textColor="#EAE8E8"
+                android:background="@drawable/button_blur"
+                android:id="@+id/women"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:padding="0dp"
+                android:text="Women" />
+        </LinearLayout>
+
+
+        <GridLayout
+
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginRight="2dp"
+                    android:textSize="15dp"
+                    android:layout_width="0dp"
+                    android:id="@+id/tabtitle"
+                    android:textColor="@color/info"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="Team" />
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"
+                    android:textSize="15dp"
+                    android:layout_width="0dp"
+                    android:id="@+id/tabscore1"
+                    android:textColor="@color/info"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Matches" />
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"
+                    android:textSize="15dp"
+                    android:layout_width="0dp"
+                    android:id="@+id/tabteam1"
+                    android:textColor="@color/info"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Points" />
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"
+                    android:textSize="15dp"
+                    android:layout_width="0dp"
+                    android:id="@+id/time"
+                    android:textColor="@color/info"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Rating" />
+            </LinearLayout>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginBottom="50dp"
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verticalLayout">
+
+
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="172dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_id"
+        android:foregroundGravity="bottom"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+</android.support.constraint.ConstraintLayout>

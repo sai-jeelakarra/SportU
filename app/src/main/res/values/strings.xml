@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">SportU</string>
+    <string name="title_activity_cricket">CricketActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Menu</string>
+    <string name="title_news">News</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="app_id">ca-app-pub-9979219184162247~3543479873</string>
+
+    <string name="banner_id1">ca-app-pub-9979219184162247/8767886391</string>
+
+    <string name="banner_id2">ca-app-pub-9979219184162247/3024605122</string>
+
+    <string name="banner_id3">ca-app-pub-9979219184162247/3954543418</string>
+
+    <string name="banner_id4">ca-app-pub-9979219184162247/6740488852</string>
+
+    <string name="banner_id5">ca-app-pub-9979219184162247/7945759313</string>
+
+    <string name="banner_id6">ca-app-pub-9979219184162247/2855006743</string>
+
+    <string name="banner_id7">ca-app-pub-9979219184162247/4433766004</string>
+
+    <string name="banner_id8">ca-app-pub-9979219184162247/1904639736</string>
+    <string name="banner_id9">ca-app-pub-9979219184162247/8825271308</string>
+    <string name="banner_id10">ca-app-pub-9979219184162247/1254026756</string>
+    <string name="banner_id11">ca-app-pub-9979219184162247/9870883378</string>
+    <string name="banner_id12">ca-app-pub-9979219184162247/8174658326</string>
+
+    <string name="banner_id13">ca-app-pub-9979219184162247/7348661812</string>
+    <string name="banner_id14">ca-app-pub-9979219184162247/9511790720</string>
+    <string name="banner_id15">ca-app-pub-9979219184162247/2834701730</string>
+
+
+    <string name="banner_id16">ca-app-pub-9979219184162247/2020313512</string>
+    <string name="banner_id17">ca-app-pub-9979219184162247/5384843453</string>
+
+    <string name="banner_id18">ca-app-pub-9979219184162247/4433766004</string>
+    <string name="banner_id19">ca-app-pub-9979219184162247/4433766004</string>
+    <string name="banner_id">ca-app-pub-9979219184162247/4433766004</string>
+
+
+    <string name="interstitial_id1">ca-app-pub-9979219184162247/5616901452</string>
+    <string name="interstitial_id2">ca-app-pub-9979219184162247/7149474978</string>
+    <string name="interstitial_id3">ca-app-pub-9979219184162247/6738411430</string>
+    <string name="interstitial_id4">ca-app-pub-9979219184162247/3515436003</string>
+    <string name="interstitial_id5">ca-app-pub-9979219184162247/6546839742</string>
+    <string name="interstitial_id6">ca-app-pub-9979219184162247/8648343184</string>
+    <string name="interstitial_id7">ca-app-pub-9979219184162247/9849744219</string>
+
+
+    <string name="videoadd_id1">ca-app-pub-9979219184162247/1705576606</string>
+
+    <string name="videoadd_id2">ca-app-pub-9979219184162247/5453249921</string>
+
+    <string name="videoadd_id3">ca-app-pub-9979219184162247/4794774377</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">1684186608304640</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+</string>
+</resources>

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.InfoFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/button_blur"
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/team1pic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/team1odd"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_round_red"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/team2odd"
+            app:layout_constraintHorizontal_bias="0.895"
+            app:layout_constraintStart_toEndOf="@+id/team1pic"
+            app:layout_constraintTop_toBottomOf="@+id/tabteam1" />
+
+        <TextView
+
+            android:id="@+id/tabteam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="Team2"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/team2picture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tabteam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="Team1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/tabteam2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/team1pic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/team2odd"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_green"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/team2picture"
+            app:layout_constraintTop_toBottomOf="@+id/tabteam2" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:background="@color/bgBottomNavigation"
+            android:padding="3dp"
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:text="VS"
+            app:layout_constraintEnd_toStartOf="@+id/team2picture"
+            app:layout_constraintHorizontal_bias="0.449"
+            app:layout_constraintStart_toEndOf="@+id/team1pic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/team2picture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="140dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint"
+        app:layout_constraintVertical_bias="0.023">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:background="@drawable/background_blur_square"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/one"
+                        android:textColor="@color/orange"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Series  " />
+                    <TextView
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/series"
+                        android:textColor="@color/white"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="loading.." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/orange"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Match " />
+                    <TextView
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/match"
+                        android:textColor="@color/white"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="loading.." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/background_blur_square"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/orange"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Timings" />
+                    <TextView
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/date"
+                        android:textColor="@color/white"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="loading.." />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/orange"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Venue" />
+                    <TextView
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/venue"
+                        android:textColor="@color/white"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="loading.." />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/background_blur_square"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/orange"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Toss" />
+                    <TextView
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/toss"
+                        android:textColor="@color/white"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="loading.." />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/orange"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Umpires " />
+                    <TextView
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/umpire"
+                        android:textColor="@color/white"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="loading.." />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/background_blur_square"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/orange"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Third Umpire" />
+                    <TextView
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/thirdumpire"
+                        android:textColor="@color/white"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="loading.." />
+
+                </LinearLayout>
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner_id1"
+                    android:foregroundGravity="bottom"
+                    ads:layout_constraintBottom_toBottomOf="parent"
+                    ads:layout_constraintEnd_toEndOf="parent"
+                    ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="30dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/bgBottomNavigation"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Playing XI" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="5dp"
+
+                    android:background="@drawable/background_blur_square"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:id="@+id/team1name"
+                        android:layout_width="0dp"
+                        android:textColor="@color/orange"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Team1" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/team1playerslist"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="loading.." />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+
+                    android:background="@drawable/background_blur_square"
+                    android:padding="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/team2name"
+                        android:textColor="@color/orange"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Team2" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:id="@+id/team2playerslist"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="loading.." />
+
+                </LinearLayout>
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner_id2"
+                    android:foregroundGravity="bottom"
+                    ads:layout_constraintBottom_toBottomOf="parent"
+                    ads:layout_constraintEnd_toEndOf="parent"
+                    ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </GridLayout>
+
+
+
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

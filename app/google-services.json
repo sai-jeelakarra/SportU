@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "542479176450",
+    "firebase_url": "https://sportu-2f3c8.firebaseio.com",
+    "project_id": "sportu-2f3c8",
+    "storage_bucket": "sportu-2f3c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542479176450:android:27d0940f765b1956",
+        "android_client_info": {
+          "package_name": "com.example.androiddeveloper.developerapk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542479176450-6dnijt51p9vj5gtdc1hm2lnn3i6c5qc5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androiddeveloper.developerapk",
+            "certificate_hash": "c27c8a4dd11dd312b65126e1755ec2f93b241cb0"
+          }
+        },
+        {
+          "client_id": "542479176450-lfeik5c389q4afsmadpgag8nhkqjpdcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgfecdAHwL34IqSjmgIATQMVPHb__CREA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542479176450-lfeik5c389q4afsmadpgag8nhkqjpdcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542479176450:android:76fae4edb94b9ccd",
+        "android_client_info": {
+          "package_name": "com.sportu.androiddeveloper.lasttry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542479176450-bolq5nr64fcog6u2id2vqa5bedemt2nb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sportu.androiddeveloper.lasttry",
+            "certificate_hash": "c27c8a4dd11dd312b65126e1755ec2f93b241cb0"
+          }
+        },
+        {
+          "client_id": "542479176450-lfeik5c389q4afsmadpgag8nhkqjpdcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgfecdAHwL34IqSjmgIATQMVPHb__CREA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542479176450-lfeik5c389q4afsmadpgag8nhkqjpdcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542479176450:android:d71b746574fac261",
+        "android_client_info": {
+          "package_name": "com.sportu.androiddeveloper.sportuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542479176450-tciqrf5o8tjp333j889t62lutih4e6vq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sportu.androiddeveloper.sportuapp",
+            "certificate_hash": "c27c8a4dd11dd312b65126e1755ec2f93b241cb0"
+          }
+        },
+        {
+          "client_id": "542479176450-lfeik5c389q4afsmadpgag8nhkqjpdcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgfecdAHwL34IqSjmgIATQMVPHb__CREA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542479176450-lfeik5c389q4afsmadpgag8nhkqjpdcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

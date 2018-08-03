@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sportu.androiddeveloper.lasttry">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".LastTry"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CricketActivity"
+            android:parentActivityName=".InfinityCycle.CarouselActivity" />
+        <activity
+            android:name=".FootBallActivity"
+            android:parentActivityName=".InfinityCycle.CarouselActivity" />
+        <activity
+            android:name=".IconTextTabsActivity"
+            android:parentActivityName=".CricketActivity" />
+        <activity android:name=".ScoresActivity" />
+        <activity
+            android:name=".RankingsActivity"
+            android:parentActivityName=".CricketActivity" />
+        <activity android:name=".InfinityCycle.CarouselActivity" />
+        <activity android:name=".activities.RankingTypeActivity" />
+        <activity
+            android:name=".activities.TeamRankingsActivity"
+            android:parentActivityName=".activities.RankingTypeActivity" />
+        <activity android:name=".activities.RecentMatchesActivity" />
+        <activity android:name=".activities.UpcomingActivity" />
+        <activity android:name=".activities.RecordsActivity" />
+        <activity android:name=".activities.LiveScoreActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider{1684186608304640}"
+            android:exported="true" />
+
+        <service
+            android:name=".Notifications.MyFirebaseMessagingService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notifications.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:parentActivityName=".CricketActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activities.PointsTableActivity"></activity>
+    </application>
+
+</manifest>

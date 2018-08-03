@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/recordslayout"
+
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        >
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:paddingStart="5dp"
+                android:layout_marginRight="2dp"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:id="@+id/name"
+                android:textColor="@color/white"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+            <TextView
+                android:layout_marginRight="2dp"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:id="@+id/one"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="M" />
+            <TextView
+                android:layout_marginRight="2dp"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:id="@+id/two"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="I" />
+            <TextView
+                android:layout_marginRight="2dp"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:id="@+id/three"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="R" />
+            <TextView
+                android:layout_marginRight="2dp"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:id="@+id/four"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Ratings" />
+        </LinearLayout>
+
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>

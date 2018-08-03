@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/verticalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+
+                <Button
+                    android:id="@+id/nameofteam1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_round_blue"
+                    android:padding="5dp"
+                    android:text="Team1"
+                    android:textColor="@color/white" />
+
+
+                <Button
+                    android:id="@+id/nameofteam2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_round_blue"
+                    android:padding="5dp"
+                    android:text="Team2"
+                    android:textColor="#EAE8E8" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_marginBottom="200dp"
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verticalLayout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             >
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round_gray"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="BATSMEN"
+                android:textColor="@color/white" />
+
+            <GridLayout
+                android:background="@color/blue"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                >
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="Batsman" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="R" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="B" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="#00E676"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="4s" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="#00E676"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="6s" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="SR" />
+                </LinearLayout>
+
+
+
+
+
+            </GridLayout>
+
+            <ListView
+                android:id="@+id/batsmenlist"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                >
+            </ListView>
+
+
+            <Button
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round_gray"
+                android:padding="5dp"
+                android:text="BOWLERS"
+                android:textColor="@color/white" />
+            <GridLayout
+                android:background="@color/blue"
+                android:layout_marginTop="5dp"
+                android:id="@+id/grid2"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                >
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="Bowler" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="O" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="M" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="#00E676"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="R" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="#00E676"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="W" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15dp"
+                        android:layout_width="0dp"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="Eco" />
+                </LinearLayout>
+
+
+
+            </GridLayout>
+
+            <ListView
+                android:id="@+id/bowlerlist"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                 />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_id12"
+        android:foregroundGravity="bottom"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+
+</android.support.constraint.ConstraintLayout>

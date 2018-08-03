@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        >
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginRight="2dp"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:id="@+id/tabtitle"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="-" />
+            <TextView
+                android:layout_marginRight="2dp"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:id="@+id/tabscore1"
+                android:textColor="@color/white"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="-" />
+            <TextView
+                android:layout_marginRight="2dp"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:id="@+id/tabteam1"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="-" />
+            <TextView
+                android:layout_marginRight="2dp"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:id="@+id/time"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="-" />
+        </LinearLayout>
+
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>
